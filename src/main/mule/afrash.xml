@@ -10,5 +10,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<flow name="afrashFlow" doc:id="eadb541f-5f22-4022-979f-4c88f89fdc68" >
 		<http:listener doc:name="Listener" doc:id="5227e30d-4352-4e04-8bab-f12c0f0c9788" config-ref="HTTP_Listener_config" path="/afrash"/>
 		<set-payload value="#[payload]" doc:name="Set Payload" doc:id="a77c3059-bde0-4984-834f-35868777fa85" />
+		<logger level="INFO" doc:name="Logger" doc:id="204e1ed1-7e58-4a06-bcbc-769698fbfb81" />
+		<logger level="INFO" doc:name="Logger" doc:id="a51f0b85-32fe-4828-9b02-c9a0776ca422" />
 	</flow>
 </mule>
